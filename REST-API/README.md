@@ -3,6 +3,8 @@ REST API Development from Scratch
 Step 1: Enable Apache Web Server on local RHEL8 Linux Box
 Follow the instructions in this RHEL8 documentation to (a) Set up a single instance Apache HTTP server - section 1.4 (b) to start/manage the httpd daemon - section 1.3 : https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/deploying_different_types_of_servers/index#installing-the-apache-http-server-manual_setting-apache-http-server
 
+Step-1a: Enable Cross Origin Resource Sharing (CORS) on Apache server. (https://enable-cors.org/server_apache.html, https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
 Step 2: Set up a secure website on the local host (first, without connecting to the external Internet)
 2.1. hostname = starline
 2.2. inspect network connections (https://www.networkworld.com/article/2697039/unix-top-networking-commands-and-what-they-tell-you.html)
