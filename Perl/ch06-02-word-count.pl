@@ -16,7 +16,7 @@ while ($name = <STDIN>)
     }
     else
     {
-	@hashname{$name} += 1; # increment
+	$hashname{$name} += 1; # increment
     };
     # $hashname{$name} = $name;
     last if ($idx++ == $sznames);
@@ -35,7 +35,14 @@ while ($name = <STDIN>)
 {
     chomp($name);
 
-    print "Count: $hashname{$name}\n";
+    if ($hashname{$name})
+    {
+        print "Count: $hashname{$name}\n";
+    }
+    else
+    {
+	print "Count: 0\n";
+    }
 
     print "Enter name (^D to exit): ";
 }
